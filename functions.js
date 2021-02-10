@@ -104,7 +104,7 @@ const products = [
 //Empty array.
 let cartArray = [] ;
 
-//
+//Function that returns cartArray to see how many items there are in the cart.
 function numberOfItems(){
     console.log("cartArray",cartArray);
     return cartArray.length;
@@ -350,13 +350,13 @@ function showCart() {
             <div class="billing">
                 <div class="sum">Order Summary</div>
                 <div class="ordid">#yourorderid123</div>
-                <div class="ordright" id="subpri"></div>
+                <div class="ordright" id="subPrice"></div>
                 <div class="ordleft">Subtotal</div>
                 <div class="ordright">0€ (DHL Express)</div>
                 <div class="ordleft">Shipping</div>
                 <div class="ordright" id="vat"></div>
                 <div class="ordleft">VAT (Included)</div>
-                <div class="ordpric" id="totpri"></div>
+                <div class="ordpric" id="totalPrice"></div>
                 <div class="ordtot">Total</div>
                 <div><button class="checbut">CHECKOUT</button></div>
             </div>
@@ -392,29 +392,36 @@ function showCart() {
 
             let createDiv = document.createElement('div');
             createDiv.classList.add('createDiv');
+
             let nameDiv = document.createElement('div');
             nameDiv.innerHTML = cartArray[i].name;
+
             let priceDiv = document.createElement('div');
             priceDiv.innerHTML = '€' + cartArray[i].price;
+
             let sizeDiv = document.createElement('div');
+
             let inputElement = document.createElement('input');
             inputElement.value = 1;
             inputElement.type = 'number';
             inputElement.className = 'amount';
+
             let quantityDiv = document.createElement('div');
             quantityDiv.innerHTML = 'Quantity';
+
             let deleteItem = document.createElement('button');
             deleteItem.innerHTML = '<i class="far fa-trash-alt fa-2x"></i>';
             deleteItem.className = 'deleteDiv';
+
             container3.append(container4);
             container4.append(smallProductImage,createDiv);
             createDiv.append(nameDiv, priceDiv, quantityDiv, inputElement, deleteItem);
         }
 
-
         let removeButtons = document.querySelectorAll('.deleteDiv');
         let containerDiv = document.querySelectorAll('.container4');
         let cartItems = document.querySelector('.cartItems');
+        
         for(let i = 0; i < removeButtons.length; i ++){
             removeButtons[i].onclick = () => removeDiv(i);
         }
@@ -432,12 +439,12 @@ function showCart() {
         for( i = 0; i < cartArray.length; i ++ ) {
             middleprice += cartArray[i].price;
             }
-        let subPrice = document.querySelector('#subpri');
+        let subPrice = document.querySelector('#subPrice');
         subPrice.innerHTML = '€' +  middleprice.toFixed(2);
         let vatPrice = document.querySelector('#vat');
         vatPrice.innerHTML = '€' +  (0.24 * middleprice).toFixed(2);
-        let totPrice = document.querySelector('#totpri');
-        totPrice.innerHTML = '€' +  middleprice.toFixed(2);
+        let totalPrice = document.querySelector('#totalPrice');
+        totalPrice.innerHTML = '€' +  middleprice.toFixed(2);
     }
 }
 }
