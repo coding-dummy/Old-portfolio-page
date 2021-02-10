@@ -1,0 +1,393 @@
+html{
+    background-color: #fff;
+}
+
+.shopMenu {
+    width: 500px;
+}
+
+.container{
+    display: flex;
+    background-color: #f6f6f6;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+
+.img1{
+    padding-right: 290px;
+    
+}
+
+.kaiH4{
+    margin-left: 40px;
+}
+
+.shopcart{
+    margin-left: 35px;
+}
+
+.button2{
+    border: 0px;
+    background-color: #f6f6f6;
+    letter-spacing: 3px;
+    font-size: 17px;
+    color: #AAAAAA;
+    font-weight: bold;
+    padding: 20px;
+    outline: none;
+    cursor: pointer;
+    
+    
+}
+
+.button2:hover{
+    color:#7f7f7f ;
+}
+
+.container3{
+    background-color: #ffffff;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around; 
+    left: 10px;
+    position: relative;
+    padding: 10px;
+    border: 20px solid #ffffff;
+    
+    
+}
+
+.produceimg{
+    border: 1px solid #ccc;
+}
+
+.producediv{
+    float: right;
+    position: relative;
+    left: 6px;
+}
+
+.container4{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    text-align: right;
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+#subcod{
+    height: 24px;
+    resize: none;
+    vertical-align: bottom;
+}
+
+#subcod2{
+    height: 15px;
+    resize: none;
+    vertical-align: bottom;
+}
+
+.rmvbtn {
+    border: 0px;
+    background-color: #f6f6f6;
+    color: #AAAAAA;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.bkbtn{
+    background-color: white;
+    outline: none;
+    border:none;
+    font-size: 20px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.rmvbtn:hover{
+    color:#7f7f7f ;
+}
+
+.bkbtn:hover{
+    background-color: #f6f6f6;
+    outline: none;
+    border:none;
+    font-size: 20px;
+}
+
+.submit2{
+    outline: none;
+    height: 30px;
+    border-color: black;
+    border-width: 1px;
+    right: 10px;
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+}
+
+.submit2:hover{
+    background-color: #f6f6f6;
+}
+
+#container3 {
+    display: flex;
+    height: 140px;
+    background-color: #f6f6f6;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+}
+  
+#container3 h5 {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+    font-weight: 400;
+    margin-left: 53px;
+    font-size: 13px;
+}
+
+  
+#form {
+    margin-top: -10px;
+    position: relative;
+    bottom: 10px;
+    margin-left: 53px; 
+}
+  
+#form input {
+    width: 260px;
+    font-size: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+  
+#form button {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #333333;
+    margin-left: -5px;
+    font-weight: 400;
+    width: 95px;
+    height: 21px;
+    cursor: pointer;
+}
+
+#form button:hover {
+    outline: none;
+    background-color: #f6f6f6
+}
+
+#form button:focus {
+    outline: none;
+    background-color: #f6f6f6
+}
+
+#form button:focus {
+    outline: none;
+    background-color: #f6f6f6
+}
+  
+#container4 {
+    margin-top: 10px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 95px;
+}
+  
+#container4 button {
+    border: 0px;
+    background-color: #f6f6f6;
+    letter-spacing: 2px;
+    font-size: 17px;
+    color: #aaaaaa;
+    font-weight: bold;
+    padding: 20px;
+}
+  
+#container4 button:hover{
+    color: #7f7f7f;
+}
+
+h5 {
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 53px;
+}
+
+
+.sum{
+    font-weight: bold;
+    font-size: 17px;
+    color: #7f7f7f
+}
+
+.ordid{
+    font-weight: bolder;
+    color: #7f7f7f;
+    margin-top: 5px
+}
+
+.ordleft{
+    color: #333333;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.ordright{
+    color: #555555;
+    float: right;
+    margin-top: 50px;
+
+}
+
+.ordtot{
+    color: #333333;
+    font-weight: Bold;
+    margin-top: 50px;
+}
+
+.ordpric{
+    color: #555555;
+    float: right;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.checbut{
+    float: left;
+    margin-top: 70px;
+    margin-left: 35%;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    background-color: #000000;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    cursor: pointer;
+}
+
+.billing{
+    float: right;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f6f6f6;
+    width: 340px;
+    padding: 30px;
+    text-align: justify;
+}
+
+.ordercont{
+    width: 35%;
+    text-align: left;
+    letter-spacing: 1px;
+    height: 60%;
+    font-family: "Montserrat", sans-serif;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.shiphead{
+    color: #555555;
+    font-weight: Bolder;
+    margin-top: -5px;
+    font-size: 15px;
+
+}
+
+.shiptext1{
+    color: #333333;
+    margin-top: 5px;
+    font-size: 13px;
+
+}
+
+.shiptext1st{
+    color: #333333;
+    margin-top: 20px;
+    font-size: 13px;
+
+}
+
+.shiptext2{
+    color: #333333;
+    margin-top: 5px;
+    font-size: 13px;
+
+}
+
+.shiptext2st{
+    color: #333333;
+    margin-top: 20px;
+    font-size: 13px;
+
+}
+
+.shiptext3{
+    color: #333333;
+    margin-top: 10px;
+    font-size: 13px;
+
+}
+
+.shiptext3st{
+    color: #333333;
+    margin-top: 25px;
+    font-size: 13px;
+
+}
+
+.shiptext3right{
+    color: #333333;
+    margin-top: 0px;
+    font-size: 13px;
+    right: 0px;
+    float:right;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.shiptext3rightnd{
+    color: #333333;
+    margin-top: 0px;
+    font-size: 13px;
+    right: -20px;
+    float:right;
+    text-align: right;
+    position: relative;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.amount {
+    width: 20%;
+    outline: none;
+}
+
+.deleteDiv {
+    background-color: #f6f6f6;
+    border: none;
+    outline: none;
+    padding: 5%;
+    
+}
