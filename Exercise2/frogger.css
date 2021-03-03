@@ -11,7 +11,7 @@ body {
     width: 650px;
     height: 650px;
     transform: translate(-50%, -50%);
-    background-image: url(../images/background.png);
+    background-image: url(..Exercise2/images/background.png);
 }
 
 canvas {
