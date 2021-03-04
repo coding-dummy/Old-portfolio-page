@@ -1,7 +1,9 @@
 class Frogger {
-    constructor(froggerX, froggerY, speedX, speedY){
+    constructor(froggerX, froggerY, froggerWidth, froggerHeight, speedX, speedY){
         this.x = froggerX;
         this.y = froggerY;
+        this.width = froggerWidth;
+        this.height = froggerHeight;
         this.speedX = speedX;
         this.speedY = speedY;
     }
@@ -22,7 +24,7 @@ class Frogger {
     }
     draw(){
         context.beginPath();
-        context.rect(this.x, this.y, 50, 50);
+        context.rect(this.x, this.y, this.width, this.height, 50, 50);
         context.fillStyle = "green";
         context.fill();
     }
@@ -54,6 +56,8 @@ class car {
         }
     }
 }
+
+
 
 class turtle {
     constructor(turtleX, turtleY, turtleWidth, turtleHeight, turtleSpeed) {
@@ -113,31 +117,31 @@ function entityRows(){
     //2nd row 
     for (let i = 0; i < 3; i++){
         let entityState = i * 200
-        entityArray.push(new car(entityState, canvas.height - 50*2, 50*1, 50, -1)); 
+        entityArray.push(new car(entityState, canvas.height - 49*2, 50*1, 40, -1)); 
     }
 
     //3rd row
     for (let i = 0; i < 1; i++){
         let entityState = i * 400
-        entityArray.push(new car(entityState, canvas.height - 50*3, 50*4, 50, 2));  
+        entityArray.push(new car(entityState, canvas.height - 49*3, 50*4, 40, 2));  
     }
 
     //4th row
     for (let i = 0; i < 2; i++){
         let entityState = i * 400
-        entityArray.push(new car(entityState, canvas.height - 50*4, 50*3, 50, -2));  
+        entityArray.push(new car(entityState, canvas.height - 49*4, 50*3, 40, -2));  
     }
 
     //5th row 
     for (let i = 0; i < 1; i++){
         let entityState = i * 300
-        entityArray.push(new car(entityState, canvas.height - 50*5, 50*1, 50, 2));
+        entityArray.push(new car(entityState, canvas.height - 49*5, 50*1, 40, 2));
     }
 
     //6th row 
     for (let i = 0; i < 1; i++){
         let entityState = i * 200
-        entityArray.push(new car(entityState, canvas.height - 50*6, 50*3, 50, -3.5));
+        entityArray.push(new car(entityState, canvas.height - 49*6, 50*3, 40, -3.5));
     }
 
     //8th row
@@ -180,7 +184,7 @@ function entitySetup() {
     }
 }
 
-const frogger = new Frogger(300, 600, 50, 50)
+const frogger = new Frogger(300, 600, 50, 50, 50, 50)
 
 function animate(){
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -192,22 +196,37 @@ function animate(){
 
 window.requestAnimationFrame(animate);
 
+//Movement with wasd keys
+window.addEventListener('keydown', function(event){
+    switch(event.keyCode){
+        case 87:
+            frogger.moveUp();
+            break;
+        case 65: 
+            frogger.moveLeft();
+            break;
+        case 83: 
+            frogger.moveDown();
+            break;
+        case 68:
+            frogger.moveRight();
+            break;
+    }
+});
+
+//Movement with arrow keys
 window.addEventListener('keydown', function(event){
     switch(event.keyCode){
         case 38:
-            console.log('up');
             frogger.moveUp();
             break;
         case 37: 
-            console.log('left');
             frogger.moveLeft();
             break;
         case 40: 
-            console.log('down');
             frogger.moveDown();
             break;
         case 39:
-            console.log('right');
             frogger.moveRight();
             break;
     }
