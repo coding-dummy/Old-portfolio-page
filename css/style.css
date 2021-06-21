@@ -3,25 +3,18 @@ body {
     font-family: 'PT Sans', sans-serif;
 }
 .header {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
-    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.headerLogo {
+.logo {
     cursor: pointer;
+    max-height: 50px;
 }
-.headerCtrl {
-    display: flex;
-}
-.headerCtrl button {
-    border: none;
-    background-color: #F2F2F2;
-    cursor: pointer;
-    padding: 0;
-    margin: 10%;
-}
+
 
