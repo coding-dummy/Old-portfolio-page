@@ -21,6 +21,7 @@
 }
 .contact {
     margin: auto;
+    margin-bottom: 2%;
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -37,9 +38,29 @@
 .contactMessage {
     display: flex;
     flex-direction: column;
+    margin: auto;
+    margin-bottom: 1%;
+    width: 50%;
+}
+.contactMessage input{
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.contactSubmit {
+    margin: auto;
+    text-align: center;
+}
+.contactSubmit button {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 22px;
+    border: 2px solid #02A7F0;
+    border-radius: 22px;
+    padding: 10px;
+    cursor: pointer;
 }
 label {
     font-size: 18px;
+    margin-bottom: 1%;
 }
 input {
     background-color: #f6f6f600;
@@ -49,4 +70,15 @@ input {
     padding-top: 5px;
     padding-bottom: 5px;
     outline: none;
+}
+textarea {
+    background-color: #f6f6f600;
+    border: 1px solid #02A7F0;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: none;
+    resize: none;
 }
