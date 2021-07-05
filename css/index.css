@@ -43,3 +43,9 @@
     border-radius: 22px;
     padding: 10px;
 }
+.skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}

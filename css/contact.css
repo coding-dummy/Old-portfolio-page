@@ -1,7 +1,5 @@
 .headerCtrl {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 .headerCtrl img {
     cursor: pointer;
@@ -26,6 +24,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .contactName {
     display: flex;
