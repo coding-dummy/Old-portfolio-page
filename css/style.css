@@ -1,5 +1,5 @@
 body {
-    background-color: #F2F2F2;
+    background-image: url(../img/galaxy.jpg);
     font-family: 'PT Sans', sans-serif;
 }
 .header {
@@ -11,10 +11,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 1%;
 }
 .logo {
     cursor: pointer;
-    max-height: 50px;
+    max-height: 75px;
 }
 
 

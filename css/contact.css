@@ -3,6 +3,7 @@
 }
 .headerCtrl img {
     cursor: pointer;
+    max-height: 40px;
 }
 .me {
     max-height: 125px;
@@ -16,6 +17,12 @@
 .intro h1 {
     font-size: 44px;
     font-weight: 400;
+    color: white;
+    text-shadow:
+   -2px -2px 0 black,  
+    2px -2px 0 black,
+    -2px 2px 0 black,
+     2px 2px 0 black;
 }
 .contact {
     margin: auto;
@@ -52,27 +59,46 @@
 .contactSubmit button {
     font-family: 'PT Sans', sans-serif;
     font-size: 22px;
-    border: 2px solid #02A7F0;
+    border: 2px solid #3a0055;
     border-radius: 22px;
     padding: 10px;
     cursor: pointer;
+    transition: 1s;
+}
+.contactSubmit button:hover {
+    background-color: #3a0055;
+    border: 2px solid #f2f2f2;
+    color: white;
+    transition: 1s;
 }
 label {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 1%;
+    color: white;
+    text-shadow:
+   -2px -2px 0 black,  
+    2px -2px 0 black,
+    -2px 2px 0 black,
+     2px 2px 0 black;
 }
 input {
-    background-color: #f6f6f600;
-    border: 1px solid #02A7F0;
+    background-color: #ffffff28;
+    border: 2px solid #3a0055;
     border-radius: 5px;
     font-size: 18px;
     padding-top: 5px;
     padding-bottom: 5px;
     outline: none;
+    color: white;
+    text-shadow:
+   -2px -2px 0 black,  
+    2px -2px 0 black,
+    -2px 2px 0 black,
+     2px 2px 0 black;
 }
 textarea {
-    background-color: #f6f6f600;
-    border: 1px solid #02A7F0;
+    background-color: #ffffff28;
+    border: 2px solid #3a0055;
     border-radius: 5px;
     font-size: 18px;
     height: 200px;
@@ -80,4 +106,10 @@ textarea {
     padding-bottom: 5px;
     outline: none;
     resize: none;
+    color: white;
+    text-shadow:
+   -2px -2px 0 black,  
+    2px -2px 0 black,
+    -2px 2px 0 black,
+     2px 2px 0 black;
 }
