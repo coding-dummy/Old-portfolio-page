@@ -1,6 +1,7 @@
 body {
     background-image: url(../img/galaxy.jpg);
     font-family: 'PT Sans', sans-serif;
+    margin: 0;
 }
 .header {
     max-width: 1300px;
