@@ -1,7 +1,7 @@
-.intro {
+.introduction {
     text-align: center;
 }
-.intro h1 {
+.introduction h1 {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -12,7 +12,7 @@
     -2px 2px 0 black,
      2px 2px 0 black;
 }
-.intro h2 {
+.introduction h2 {
     margin-bottom: 3%;
     color: white;
     font-size: 24px;
@@ -25,8 +25,8 @@
     -2px 2px 0 black,
      2px 2px 0 black;
 }
-.intro img {
-    margin-bottom: 3%;
+.introduction img {
+    margin-bottom: 4%;
     border-radius: 125px;
 }
 .about {
@@ -72,8 +72,17 @@
     flex-direction: row;
     justify-content: space-between;
     color: white;
+    margin-bottom: 5%;
 }
 .skills h2 {
+    text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+}
+.skills p {
+    font-size: 18px;
     text-shadow:
    -1px -1px 0 black,  
     1px -1px 0 black,
@@ -85,21 +94,73 @@
     border-radius: 2px;
     background-color: #ffffff79;
     text-align: center;
-    width: 50%;
+    padding: 0.5%;
+    width: 45%;
 }
-
 .design {
     border: 2px solid #3a0055;
     border-radius: 2px;
     background-color: #ffffff79;
     text-align: center;
-    width: 50%;
+    padding: 0.5%;
+    width: 45%;
 }
-
+.coding img {
+    max-height: 60px;
+}
+.design img {
+    max-height: 60px;
+}
+.work {
+    margin: auto;
+    color: white;
+}
+.work h1 {
+    margin-bottom: 5%;
+    text-align: center;
+    color: white;
+    text-shadow:
+   -2px -2px 0 black,  
+    2px -2px 0 black,
+    -2px 2px 0 black,
+     2px 2px 0 black;
+}
+.work p {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+}
+.projects {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.groupProject1 {
+    width: 50%;
+    margin-right: 4%;
+}
+.groupProject2 {
+    width: 50%;
+    margin-left: 4%;
+}
+.project1Img {
+    max-height: 300px;
+}
+.project2Img {
+    max-height: 300px;
+}
 footer {
     background-color: #3a00558e;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
     color: white;
     text-align: center;
     font-size: 16px;

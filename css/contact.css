@@ -1,10 +1,3 @@
-.headerCtrl {
-    display: flex;
-}
-.headerCtrl img {
-    cursor: pointer;
-    max-height: 40px;
-}
 .me {
     max-height: 125px;
     border-radius: 125px;
@@ -13,6 +6,7 @@
     margin: auto;
     text-align: center;
     width: 50%;
+    margin-bottom: 3%;
 }
 .intro h1 {
     font-size: 44px;
@@ -26,86 +20,12 @@
 }
 .contact {
     margin: auto;
-    margin-bottom: 2%;
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.contactName {
-    display: flex;
-    flex-direction: column;
-}
-.contactEmail {
-    display: flex;
-    flex-direction: column;
-}
-.contactMessage {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-bottom: 1%;
-    width: 50%;
-}
-.contactMessage input{
-    max-width: 100%;
-    box-sizing: border-box;
-}
-.contactSubmit {
-    margin: auto;
     text-align: center;
+    width: 60%;
 }
-.contactSubmit button {
-    font-family: 'PT Sans', sans-serif;
-    font-size: 22px;
-    border: 2px solid #3a0055;
-    border-radius: 22px;
-    padding: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-.contactSubmit button:hover {
-    background-color: #3a0055;
-    border: 2px solid #f2f2f2;
-    color: white;
-    transition: 1s;
-}
-label {
-    font-size: 22px;
-    margin-bottom: 1%;
-    color: white;
-    text-shadow:
-   -2px -2px 0 black,  
-    2px -2px 0 black,
-    -2px 2px 0 black,
-     2px 2px 0 black;
-}
-input {
-    background-color: #ffffff28;
-    border: 2px solid #3a0055;
-    border-radius: 5px;
-    font-size: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    outline: none;
-    color: white;
-    text-shadow:
-   -2px -2px 0 black,  
-    2px -2px 0 black,
-    -2px 2px 0 black,
-     2px 2px 0 black;
-}
-textarea {
-    background-color: #ffffff28;
-    border: 2px solid #3a0055;
-    border-radius: 5px;
-    font-size: 18px;
-    height: 200px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    outline: none;
-    resize: none;
+.contact h2 {
+    font-size: 24px;
+    font-weight: 400;
     color: white;
     text-shadow:
    -2px -2px 0 black,  

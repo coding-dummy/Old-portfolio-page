@@ -1,3 +1,6 @@
+html {
+    overflow-y: scroll;
+}
 body {
     background-image: url(../img/galaxy.jpg);
     font-family: 'PT Sans', sans-serif;
@@ -18,5 +21,26 @@ body {
     cursor: pointer;
     max-height: 75px;
 }
-
+.headerCtrl {
+    display: flex;
+}
+.dropBtn {
+    cursor: pointer;
+    max-height: 40px;
+}
+.closeBtn {
+    cursor: pointer;
+    max-height: 30px;
+}
+#pageContent {
+    animation: fadeIn 0.8s linear;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
